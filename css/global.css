@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+em {
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+}
+body {
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+ul, li {
+	list-style: none;
+}
+.clear {
+	margin: 0px;
+	padding: 0px;
+	width: 0px;
+	height: 0px;
+	line-height: 0px;
+	font-size: 0px;
+	clear: both;
+}
+img {
+	display: block;
+}
+/*footer*/
+.footer {
+	width: 100%;
+	background: #d2d2d2;
+	padding: 33px 0;
+	float: left;
+	font-size: 16px;
+	color: #333333;
+}
+.footer_le {
+	float: left;
+}
+.footer_nav a {
+	color: #333333;
+	margin: 0 3px;
+}
+.footer p {
+	text-align: center;
+	line-height: 35px;
+}
+.footer_ri dl {
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+.footer_ri dl dd {
+	font-size: 14px;
+	color: #333333;
+	line-height: 25px;
+}
+.grey_bg {
+	background: #d2d2d2;
+}
+.orange_bg{
+	background:#fb9c5f;
+}
+.blue_bg{
+	background:#2973be;
+}
+.center {
+	width: 1200px;
+	margin: 0 auto;
+}
+.le {
+	float: left;
+}
+.ri {
+	float: right;
+}
+.red {
+	color: #f7543d;
+}
+.clearfix::before, .clear::after {
+	content: ".";
+	display: block;
+	height: 0;
+	visbility: hidden;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+/*topbar*/
+.topbar {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+/*size*/
+.siz14 {
+	font-size: 14px;
+}
+.siz16 {
+	font-size: 16px;
+}
+.siz18 {
+	font-size: 18px;
+}
+.siz24 {
+	font-size: 24px;
+}
+/*color*/
+.cor_green{
+	color:#51a72b;
+	}
+.cor_li_red{ color:#f8682f;}
+.cor_blue {
+	color: #168de8;
+}
+.cor_li_blue {
+	color: #2973be;
+}
+.cor_black {
+	color: #444444;
+}
+.cor_li_black {
+	color: #333333;
+}
+.cor_sh_grey {
+	color: #666;
+}
+.cor_red {
+	color: #f60c0c;
+}
+.cor_li_red {
+	color: #ff0000;
+}
+.cor_li_grey {
+	color: #999999;
+}
+.topbar_ri p {
+	margin-right: 40px;
+}
+.topbar_ri a {
+	margin: 0 3px;
+}
+.logobar {
+	margin: 20px 0 14px;
+	height: 82px;
+}
+.logobar_nav ul {
+	float: right;
+	height: 64px;
+}
+.logobar_nav ul li {
+	float: left;
+	display: inline;
+	margin: 27px 0 13px 22px;
+	border: 1px solid #fff;
+	text-align: center;
+	padding: 0 3px;
+	line-height: 34px;
+}
+.logobar_nav ul li.navbox {
+	border: 1px solid #dcdcdc;
+	background: #fff;
+	z-index: 9999;
+	height: 107px;
+}
+.logobar_nav ul li.active a {
+	color: #ff261c;
+}
+.logobar_nav ul li em {
+	color: #d3d3d3;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.navmenu span {
+	width: 100%;
+}
+.navmenu span a {
+	font-size: 12px;
+	border-top: 1px dashed #dcdcdc;
+	line-height: 31px;
+	display: block;
+	text-align: center;
+	color: #504848;
+	padding: 0 8px;
+}
+/*bg*/
+.grey_bg {
+	background: #f1f1f1;
+}
+.red_bg {
+	background: #f67254;
+}
+.orange_bg {
+	background: #f9ac3e;
+}
+.green_bg {
+	background: #b3dc6b;
+}
+.blue_bg {
+	background: #2a92d4;
+}
+/*border*/
+.border-right {
+	border-right: 1px solid #f1f1f1;
+}

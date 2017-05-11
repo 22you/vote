@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/global.css" rel="stylesheet" type="text/css">
+    <link href="css/task.css" rel="stylesheet" type="text/css" />
+    <link href="css/ex_introduce.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="./laydate/laydate.js"></script>
+    <!-- <script>
+        function Append() {
+            var Root = $("#xuanx_box");
+            var Length = Root.find(".vote-group").length;
+            var number = Length + 1;
+            var uper_number = "";
+            switch (number) {
+              case 1:
+                  uper_number = "一";
+                  break;
+              case 2:
+                  uper_number = "二";
+                  break;
+                case 3:
+                    uper_number = "三";
+                    break;
+                case 4:
+                    uper_number = "四";
+                    break;
+                case 5:
+                    uper_number = "五";
+                    break;
+                case 6:
+                    uper_number = "六";
+                    break;
+            }
+
+            if (Length >= 6) {
+                return alert("不能超过6个")
+            };
+
+            Root.append('<div class="vote-group"><label>选项' + uper_number + '</label><div class="vote-control"><input type="text" placeholder="很喜欢"/><span class="delete">删除</span></div></div>')
+            $('.vote-control>.delete').click(function() {
+                $(this).parent().parent().remove();
+                // alert($(this).index());
+                for (i = $(this).index() - 1; i < number; i++) {
+
+                    newnum = i + 1;
+                    switch (newnum) {
+                        case 1:
+                            uper_number = "一";
+                            break;
+                        case 2:
+                            uper_number = "二";
+                            break;
+                        case 3:
+                            uper_number = "三";
+                            break;
+                        case 4:
+                            uper_number = "四";
+                            break;
+                        case 5:
+                            uper_number = "五";
+                            break;
+                        case 6:
+                            uper_number = "六";
+                            break;
+                    }
+                    $('#xuanx_box').find(".vote-group").eq(i).find("label").html("选项" + uper_number);
+                }
+            })
+
+        }
+
+        // function Delete(ctx) {
+        //     <!---  alert($(ctx).html());-->
+        //     $(ctx).parent().parent('.vote-group').remove();
+        // }
+    </script> -->
+    <script>
+    function append() {
+        var root = $("#xuanx_box");
+        var length = root.find(".vote-group").length;
+        var number = length + 1;
+        var uper_number = get_uper_number(number);
+        if (length >= 6) {
+            return alert("不能超过6个")
+        };
+        var item = set_item(number);
+        root.append(item);
+        $('.delete', item).click(function() {
+            delete_item(this);
+        });
+    };
+
+    function delete_item(obj) {
+        $(obj).parent().parent().remove();
+        var root = $("#xuanx_box");
+        // base_number 就是不可删除的 div 的数量, 用作重新排序的基数, 比如现在有2个, 那每次重新排序的时候就从 3 开始排
+        var base_number = $('div.vote-group:not(.vote-group-add)', root).length;
+        $('div.vote-group-add', root).each(function(i, item) {
+            // 这里获取 vote-group-add 类的所有元素, 重新排序,
+            // 排序其实本质上就是改变 选项数
+            // 比如现在有2个是需要重新排序的, 那从第三个排起, i 是从 0 开始, 所以就是 0 + 1 + 2 和 1 + 1 + 2
+            $(item).find('label').text('选项' + get_uper_number(i + 1 + base_number));
+        });
+    };
+
+    function get_uper_number(number) {
+        var uper_number = '';
+        // 删除了前两个数, 因为排序最低是从第三个开始, 所以 1 和 2 是没用的
+        switch (number) {
+            case 3:
+                uper_number = "三";
+                break;
+            case 4:
+                uper_number = "四";
+                break;
+            case 5:
+                uper_number = "五";
+                break;
+            case 6:
+                uper_number = "六";
+                break;
+        };
+        return uper_number;
+    };
+
+    function set_item(number) {
+        // 这里额外添加了一个类 vote-group-add 意思是这个是添加上去的,可以删除,
+        // 排序的时候会只针对有这个类的进行重新排序,
+        // 上边html里第三个选项也添加了这个类, 也是为了排序
+        return $('<div class="vote-group vote-group-add"><label>选项' + get_uper_number(number) + '</label><div class="vote-control"><input type="text" placeholder="很喜欢"/><span class="delete">删除</span></div></div>')
+    };
+</script>
+    <title>账户中心-调查统计-发起的投票</title>
+</head>
+
+<body>
+    <div class="myhome">
+        <div class="center">
+            <div class="new_left" id="task">
+                <h1 class="h_ico1 ico_open ico_close">我的任务</h1>
+                <div style="display:block;" class="task_itemle">
+                    <a href="#" class="active">课题研究</a>
+                    <a href="#" class="">咨询服务</a>
+                    <a href="#" class="">培训讲座</a>
+                    <a href="#" class="">技术难题</a>
+                    <a href="#" class="">评审验收</a>
+                    <a href="#" class="">技术评价</a>
+                    <a href="#" class="">在线评估</a>
+                </div>
+                <h1 class="h_ico1 ico_open ico_close">我的问答</h1>
+                <div style="display:block;" class="task_itemle"> <a href="#" class="ico_close">我的提问</a> <a href="#" class="ico_close">我的回答</a> <a href="#" class="ico_close">我的收听</a> <a href="#" class="ico_close">我的关注</a> </div>
+                <h1 class="h_ico1 ico_open ico_close">调查统计</h1>
+                <div style="display:block;" class="task_itemle"> <a href="#" class="ico_close">发起的投票</a> <a href="#" class="ico_close">参与的投票</a> <a href="#" class="ico_close">专家打分</a> </div>
+                <h1 class="h_ico1 ico_open ico_close">我的信息</h1>
+                <div style="display:block;" class="task_itemle"> <a href="#" class="ico_close">个人资料</a> <a href="#" class="ico_close">设置中心</a> <a href="#" class="ico_close">专家推荐</a> <a href="#" class="ico_close">我的消息</a> <a href="#" class="ico_close">我的收藏</a> </div>
+            </div>
+            <div class="new_right">
+                <ol>
+                    <h3 class="ti_rik">发起的投票</h3>
+
+                    <div class="dsh">
+                        <form>
+                            <div class="form_group siz16 cor_li_black">
+                                <label>投票标题：</label>
+                                <input type="text" style="border:1px solid #2973be; padding:4px; width:222px; line-height:30px; height:30px;" />
+                            </div>
+                            <div class="form_group siz16 cor_li_black">
+                                <label>投票分类：</label>
+                                <select>
+              <option>金融货币交易行业</option>
+              <option>金融货币交易行业</option>
+              <option>金融货币交易行业</option>
+              <option>金融货币交易行业</option>
+            </select>
+                            </div>
+                            <div class="form_group siz16 cor_li_black">
+                                <label>发起时间：</label>
+                                <ul>
+                                    <li>
+                                        <input type="number" min="0" />
+                                    </li>
+                                    <li style="margin:0 10px;">至</li>
+                                    <li>
+                                        <input type="number" min="0" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form_group siz16 cor_li_black">
+                                <label>发起时间：</label>
+                                <ul>
+                                    <li>
+                                        <input type="number" min="0" />
+                                    </li>
+                                    <li style="margin:0 10px;">至</li>
+                                    <li>
+                                        <input type="number" min="0" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form_group siz16 cor_li_black">
+                                <label></label>
+                                <input type="submit" value="重置" class="submit" />
+                            </div>
+                            <div class="form_group siz16 cor_li_black">
+                                <label></label>
+                                <input type="submit" value="查询" class="submit" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="launch_vote_tab">
+                        <ul class="kt_zt">
+                            <li class="active"><a href="" title="">发起投票</a></li>
+                            <li><a href="" title="">关闭投票</a></li>
+                        </ul>
+                    </div>
+                    <!-----发起投票----->
+          <div class="vote_box">
+              <form action="">
+                  <div class="vote-group">
+                      <label>投票主题</label>
+                      <div class="vote-control">
+                          <input type="text" placeholder="您的主题" />
+                      </div>
+                  </div>
+                  <div class="vote-group">
+                      <label>投票类型</label>
+                      <div class="vote-control">
+                          <input type="radio" name="vote" />投票为单选
+                          <input type="radio" name="vote" />投票为多选
+                      </div>
+                  </div>
+                  <div class="vote-group">
+                      <label>投票截止日期</label>
+                      <div class="vote-control">
+                          <input name="" value="" class="laydate-icon" onclick="laydate()">
+                          <input type="number" style="border:1px solid #dcdcdc; margin:0 5px; padding:0 5px; width:40px;line-height:25px; border-radius:4px;" max='24' min='0' />时<input type="number" min='00' max="60" style="margin:0 5px; border:1px solid #dcdcdc;line-height:25px; border-radius:4px; padding:0 5px; width:40px;">分
+                      </div>
+                  </div>
+                  <div class="vote-group">
+                      <label>选项设置</label>
+                      <div class="vote-control">
+                          <span style="font-size:16px; color:#999999;">(最多设置6个选项)</span>
+                      </div>
+                  </div>
+                  <div id="xuanx_box">
+                      <div class="vote-group">
+                          <label>选项一</label>
+                          <div class="vote-control">
+                              <input type="text" placeholder="很喜欢" />
+                          </div>
+                      </div>
+                      <div class="vote-group">
+                          <label>选项二</label>
+                          <div class="vote-control">
+                              <input type="text" placeholder="很喜欢" />
+                          </div>
+                      </div>
+                      <div class="vote-group vote-group-add">
+                          <label>选项三</label>
+                          <div class="vote-control">
+                              <input type="text" placeholder="很喜欢" />
+                              <span class="delete" onclick="delete_item(this)">删除</span>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="vote-group" id="add_btn">
+                      <label></label>
+                      <p class="add_item" id="add_item"><a href="javascript:;" onclick="append()">添加选项</a></p>
+                  </div>
+                  <div class="vote-group">
+                      <label></label>
+                      <div class="vote-control">
+                          <input type="submit" value="提交" />
+                      </div>
+                  </div>
+
+              </form>
+          </div>
+
+
+
+
+            </div>
+            </ol>
+
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    $(function() {
+        //左侧导航
+        $('#task h1').on('click', function() {
+            $(this).next('div').slideToggle(); //点击本身的点击展开
+            $(this).toggleClass("ico_open");
+        })
+
+
+    })
+</script>
+
+</html>

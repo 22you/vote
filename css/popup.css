@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************注册 弹框*************/
+.dialog {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+.dialog_bg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #000;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	opacity: 0.6;
+}
+.dialog_cont {
+	width: 544px;
+	height: 562px;
+	background: #fff;
+	z-index: 2;
+	position: fixed;
+	top: 50%;
+	margin-top: -281px;
+	left: 50%;
+	margin-left: -272px;
+	border-radius: 4px;
+}
+.mark_cont {
+	width: 440px;
+	padding: 12px;
+	background: #fff;
+	z-index: 2;
+	position: fixed;
+	top: 50%;
+	margin-top: -220px;
+	left: 50%;
+	margin-left: -220px;
+	border-radius: 4px;
+}
+.dialog_cont form {
+	margin-left: 93px;
+	margin-top: 65px;
+}
+.dialog_cont form .form-group {
+	font-size: 16px;
+	color: #333333;
+	margin-bottom: 18px;
+	width: 100%;
+}
+.dialog_cont .form-ctrl {
+	display: inline-block;
+}
+.dialog_cont form .form-group label {
+	width: 111px;
+	text-align: right;
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	margin-right: 12px;
+}
+.dialog_cont .form-ctrl input {
+	border: 1px solid #f1f1f1;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 4px;
+	width: 170px;
+	padding: 0 5px;
+}
+.dialog_cont .form-ctrl textarea {
+	border: 1px solid #f1f1f1;
+	border-radius: 4px;
+	width: 170px;
+	height: 90px;
+	resize: none;
+	padding: 5px;
+}
+.dialog_cont .form-ctrl select {
+	border: 1px solid #f1f1f1;
+	border-radius: 4px;
+	width: 170px;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 5px;
+	width: 180px;
+}
+.close_btn {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: -12px;
+	top: -12px;
+}
+.dia_cont {
+	margin-top: 33px;
+}
+.bank-data {
+	margin-left: 123px;
+	font-size: 16px;
+	color: #999999;
+}
+.bank-data label {
+	width: 87px;
+	text-align: right;
+	display: inline-block;
+}
+.dialog_cont .confirm button {
+	width: 180px;
+	margin-left: 123px;
+	background: #2973be;
+	height: 36px;
+	line-height: 36px;
+	margin-top: 25px;
+	font-size: 14px;
+	color: #ffffff;
+	border-radius: 4px;
+}
+.mark {
+	height: 35px;
+	line-height: 35px;
+	font-size: 18px;
+	color: #333333;
+	border-bottom: 1px solid #f1f1f1;
+}
+.mark span {
+	float: right;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 20px;
+	border-radius: 100%;
+	border: 1px solid #333333;
+	display: inline-block;
+	margin-top: 4px;
+}
+/*专家打分*/
+.mark_cont form {
+	width: 362px;
+	margin-top: 30px;
+	margin-left: 78px;
+}
+.mark_cont form .form-group {
+	margin-bottom: 20px;
+}
+.mark_cont form label {
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+	text-align: right;
+	float: left;
+	margin-right: 12px;
+}
+.mark_cont form input {
+	border: 1px solid #f1f1f1;
+	height: 30px;
+	line-height: 30px;
+	width: 250px;
+	padding: 0 5px;
+	border-radius: 4px;
+}
+.mark_cont form textarea {
+	width: 250px;
+	padding: 0 5px;
+	height: 95px;
+	border: 1px solid #f1f1f1;
+	resize: none;
+}
+.mark_cont form .confirm button {
+	width: 141px;
+	margin-left: 100px;
+	background: #2973be;
+	height: 36px;
+	line-height: 36px;
+	margin-top: 25px;
+	font-size: 14px;
+	color: #ffffff;
+	border-radius: 4px;
+}
+.other_mark table {
+	border: 1px solid #e8e8e8;
+	width: 298px;
+	font-size: 14px;
+	color: #333333;
+	margin-top: 5px;
+	empty-cells: show;
+}
+.other_mark table tr {
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+	width: 100%;
+	display: block;
+}
+.other_mark table tr td, .other_mark table tr th {
+	width: 96px;
+	float: left;
+	border-right: 1px solid #e8e8e8;
+	height: 32px;
+}
+/*结项申请*/
+.end_cont {
+	width: 850px;
+	padding: 50px;
+	background: #fff;
+	z-index: 2;
+	position: fixed;
+	top: 50%;
+	margin-top: -220px;
+	left: 50%;
+	margin-left: -425px;
+	border-radius: 4px;
+}
+.end_cont h3 {
+	width: 111px;
+	height: 34px;
+	line-height: 34px;
+	background: #2973be;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 4px;
+}
+.end_tab {
+	border: 1px solid #e8e8e8;
+	margin-top: 5px;
+}
+.end_tab ul {
+	height: 39px;
+	line-height: 39px;
+	overflow: hidden;
+	border-bottom: 1px solid #e8e8e8;
+}
+.end_tab ul li {
+	float: left;
+	text-align: center;
+	height: 39px;
+}
+.end_tab ul li.one {
+	width: 160px;
+	border-right: 1px solid #e8e8e8;
+}
+.end_tab ul li.two {
+	width: 200px;
+	border-right: 1px solid #e8e8e8;
+}
+.end_tab ul li.three {
+	width: 200px;
+	border-right: 1px solid #e8e8e8;
+}
+.end_tab ul li.four {
+	width: 284px;
+}
+/*admire*/
+.admire_cont {
+	width: 280px;
+	padding: 30px;
+	background: #fff;
+	z-index: 2;
+	position: fixed;
+	top: 50%;
+	margin-top: -220px;
+	left: 50%;
+	margin-left: -140px;
+	border-radius: 4px;
+}
+.admire_hea {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+}
+.admire_hea span {
+	color: #ff0000;
+}
+.admire_money {
+	width: 100%;
+	float: left;
+	margin-top: 35px;
+}
+.admire_money label {
+	float: left;
+	width: 72px;
+	margin-right: 5px;
+	font-size: 16px;
+	color: #333333;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.admire_money input {
+	border: 1px solid #f1f1f1;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.admire_pay button {
+	margin-left: 77px;
+	margin-top: 39px;
+	width: 120px;
+	background: #2973be;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+
+/************注册 弹框 end*************/
+
+.sucess-info{
+	margin:60px auto;
+	width:100%;
+	text-align: center;
+}
+.sucess-info p span img{display:inline; position: relative; top:5px; margin-right: 6px;}
+.sucess-info p{ line-height: 45px;}

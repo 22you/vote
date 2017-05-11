@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+.myhome_ri{ width:930px; border:1px solid #f1f1f1; float:right; min-height:868px;}
+.notice{ width:878px; padding-left:52px; background:url(../images/myhome/notice.png) no-repeat 19px center; height:51px; line-height:51px; border-bottom:1px solid #f1f1f1; font-size:16px; color:#333333;}
+.person_data{ border-bottom:1px solid #f1f1f1; padding:24px 60px 11px; float:left; width:810px;}
+.person_head{ float:left; width:192px;}
+.person_head dt img{ width:192px; height:192px; border-radius:100%;}
+.person_head dd{ font-size:16px; color:#666666; height:32px; line-height:32px; overflow:hidden; width:100%; text-align:center;}
+.person_con{ float:left;width:550px;}
+.con_icon{ float:left; }
+.con_icon li{ float:left; margin-left:40px; display:inline;}
+.con_detail{ float:left; margin-top:25px; width:100%; }
+.con_detail li{ float:left; width:50%; font-size:18px; color:#333333; text-align:center; height:34px; line-height:34px;}
+.home_btn a{ width:100px; height:30px; line-height:30px; overflow:hidden; text-align:center; background:#2973be; display:inline-block; margin-right:
+12px; color:#fff; border-radius:4px; font-size:14px; margin-top:30px;}
+/*账户细节*/
+.account{ width:880px;; padding:0 25px; float:left; font-size:16px; color:#333333;}
+.account h4{ height:50px; line-height:50px; overflow:hidden; font-size:24px; color:#333333;}
+.account ul{ border-bottom:1px solid #f1f1f1; height:40px; line-height:40px;}
+.account ul li{ float:left; width:120px; text-align:center; height:40px;}
+.my_task{ border:1px solid #f1f1f1; width:846px; margin-bottom:20px;}
+
+/*课题研究_查看详情*/
+.seecon_ktyj{ float:left; padding:12px 28px 0; min-height:857px;}
+.seecon_ktyj h3{ height:35px; line-height:35px; overflow:hidden; font-size:24px; color:#f7543d;}
+.seecon_box{ border:1px solid #f1f1f1; float:left; border-bottom:0;}
+.seecon_box ul{ float:left; width:100%; border-bottom:1px solid #f1f1f1;}
+.seecon_box ul li{ width:211px; height:60px; line-height:60px; float:left; text-align:center; font-size:18px; color:#333333;}
+
+.seecon_work{border:1px solid #f1f1f1; margin-top:24px; padding:14px 23px; float:left; width:826px; min-height:121px;}
+.seecon_work h2{ float:left; width:100%; border-bottom:1px solid #f1f1f1; height:25px; line-height:25px; overflow:hidden; font-size:18px; color:#333333;}
+.ask{ padding:15px 20px;}
+.ask h3{ border-left:4px solid #7fabd8; font-size:24px; color:#333333; padding-left:7px;}
+
+.ask_con1{ width:100%; border-bottom:1px solid #f1f1f1; padding:18px 0; float:left;}
+.ask_item{ width:197px; text-align:center; height:93px; padding-top:20px;  color:#ffffff; border-radius:6px; margin:18px 30px 18px 0; float:left;}
+.ask_item dt{ font-size:30px;}
+.ask_item dd{ font-size:16px;}
+
+/*我的关注*/
+.my_atten_rw span{ height:49px; line-height:49px; margin-left:25px; font-size:18px; color:#333333;}
+.my_atten_rw img{ float:left; width:49px; height:49px; border-radius:100%;}
+/*我的收听*/
+.my_listen_name{ border:1px solid #f1f1f1; padding:17px 25px; float:left; margin-top:35px; width:838px;}
+.my_listen_name dl dt{ width:100%; font:left; font-size:18px; color:#333333; line-height:49px;}
+.my_listen_name dl dt img{ width:49px; height:49px; border-radius:100%; float:left;}
+.my_listen_name dl dt label{ float:left; margin:0 8px; display:inline;}
+.my_listen_name dl dd{ float:left; width:100%; padding:15px 0; font-size:14px; color:#333333;}
+/*个人资料*/
+.my_data{ float:left; width:100%;}
+.my_data h3{ border-bottom:1px solid #f1f1f1; height:50px; line-height:50px; overflow:hidden; padding:0 10px; font-size:24px; color:#333333;}
+.data_form{ float:left; padding:0 15px; width:900px;}
+.data_form .data_group{ float:left; width:100%; margin-top:10px;}
+.data_form .data_group label{ font-size:18px; color:#333333;}
+.data_form .data_group input{ border:1px solid #f1f1f1; height:40px; line-height:40px; overflow:hidden; width:93%; padding:0 3%;}
+.data_form .data_group textarea{border:1px solid #f1f1f1;width:91%; padding:20px 4%;}
+
+/*设置中心*/
+.set_center{ padding:0 15px; width:}
+.set_center ul li{ width:100%; border-bottom:1px solid #f1f1f1; padding:25px 0;}
+.set_center ul li .img { margin-right:22px;}
+.set_center ul li .img img{ width:78px; height:78px; border-radius:100%;}
+.set_center ul li dl{ float:left;}
+.set_center ul li dl dt{ height:43px; line-height:43px;}
+.set_center ul li dl dt .yuan{border:1px solid #f1f1f1; height:27px; line-height:27px; overflow:hidden; width:160px; margin-right:5px; padding:0 5px;}
+.set_center ul li dl dd{ height:35px; line-height:35px; overflow:hidden;}
+.set_center ul li .ri_btn{ font-size:18px; line-height:75px; margin-right:10px;}
+
+
+/*弹窗*/
+.er_bind_dialog{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	z-index:9999;
+	
+}
+.dialog_bg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #000;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	opacity: 0.6;
+}
+.dialog_cont{
+	width:867px;
+	padding:0 15px;
+	height:600px;
+	background: #fff;
+	z-index: 2;  
+	position: fixed;
+    top: 50%;
+    margin-top: -300px;
+    left: 50%;
+    margin-left: -433px;
+    border-radius: 4px;
+}
+.dialog_cont h3{ width:100%;  height:42px; line-height:42px; overflow:hidden; border-bottom:1px solid #f1f1f1; font-size:24px; color:#333333;}
+.dialog_cont h3 label{ float:right; border:1px solid #dcdcdc; border-radius:100%; height:20px; line-height:16px; overflow:hidden; text-align:center; width:20px; margin-top:10px;}
+.dialog_cont form{
+	width:660px;
+	margin-left:127px; margin-top:30px;
+	}
+.ex_bind_group{ width:50%; font-size:16px; color:#333333; float:left; margin-bottom:20px;}
+.ex_bind_group label{ width:110px; text-align:right; float:left; margin-right:12px;}
+.ex_bind_group input{ border:1px solid #f1f1f1; height:30px; line-height:30px; overflow:hidden; width:183px; padding:0 5px;}
+.ex_bind_group select{border:1px solid #f1f1f1; height:30px; line-height:30px; overflow:hidden; width:524px;}
+.ex_bind_group .idcard img{ float:left; margin-right:15px;}
+.ex_bind_btn{ width:100%; float:left; text-align:center;}
+.ex_bind_btn a{ margin:0 7px; display:inline-block; width:120px; height:32px; line-height:32px; overflow:hidden; background:#2973be; font-size:14px; color:#2973be; color:#fff; border-radius:4px;}
+
+/*专家推荐*/
+.er_recommed{ width:100%;}
+.er_recommed dt{ font-size:24px; color:#333333; height:58px; line-height:58px; overflow:hidden;}
+.er_recommed dd{ width:890px; }
+.er_recommed dd textarea{ border:1px solid #f1f1f1; width:880px;padding:5px; height:150px;}
+
+.er_list{ margin-top:15px;}
+.er_list h3{ height:50px; line-height:50px; overflow:hidden; border-left:0;}
+.er_list_table p span{ width:133px; height:30px; line-height:30px; overflow:hidden; font-size:14px; color:#fff; background:#2973be; display:block; text-align:center;}
+.list_table_con{ border:1px solid #f1f1f1; border-bottom:0; margin-top:5px; float:left; width:888px;}
+.list_table_con ul{ border-bottom:1px solid #f1f1f1; width:100%;float:left;}
+.list_table_con ul li{ height:40px; line-height:40px; overflow:hidden; text-align:center; border-right:1px solid #f1f1f1; display:inline-block; width:144px; font-size:14px; color:#333333; float:left;}
+.list_table_con ul li:nth-child(6){border-right:0;}
+/*专家推荐信息*/
+.ex_recommed_data{ width:100%;}
+.ex_recommed_data form{ margin-top:70px;}
+.ex_recommed_data h3{ font-size:24px; color:#333333; border-bottom:1px solid #f1f1f1; height:50px; line-height:50px; overflow:hidden; width:98%; padding:0 1%;}
+.ex_form_group{ width:100%; float:left; margin-bottom:20px;}
+.ex_form_group label em{ color:#ff9f9f;}
+.ex_form_group label{ width:310px; text-align:right; float:left; font-size:16px; color:#333333; margin-right:10px; height:30px; line-height:30px; overflow:hidden;}
+.ex_form_group input[type=text]{ border:1px solid #f1f1f1; height:30px; line-height:30px; overflow:hidden; border-radius:4px; width:270px; padding:0 5px;}
+.ex_form_control span{ font-size:14px; color:#999999; height:30px; line-height:30px;}
+.ex_form_control span input{ margin-top:5px;}
+.ex_form_group select{ border:1px solid #f1f1f1; height:30px; line-height:30px; overflow:hidden; width:280px;}
+.ex_form_group input[type=button]{ width:280px; background:#2973be; color:#fff; font-size:18px; height:50px; line-height:50px; overflow:hidden; border-radius:4px; margin-left:320px;}
+.ex_form_group input[type=file]{ height:28px; display:block;}
+.ex_form_group textarea{ border:1px solid #f1f1f1; padding:10px; width:260px; resize:none; border-radius:4px; height:120px;}
+.check span{ margin:0 12px;}
+.check span input{ margin-right:5px;}
+
+/*消息通知设置*/
+.set_noti{ border:1px solid #f1f1f1; width:900px; margin:18px auto; border-bottom:0;}
+.set_noti ul{ border-bottom:1px solid #f1f1f1; height:39px; line-height:39px; overflow:hidden; font-size:14px; color:#333333;}
+.set_noti ul li{ float:left; text-align:center; border-right:1px solid #f1f1f1;}
+.set_noti ul li.set_one{ width:68px;}
+.set_noti ul li.set_two{ width:150px;}
+.set_noti ul li.set_three{ width:276px;}
+.set_noti ul li.set_four{ width:141px;}
+.set_noti ul li.set_five{ width:140px;}
+.set_noti ul li.set_six{ width:120px; border-right:0;}
+
+
+/*我的消息*/
+.my_new{ width:100%; float:left; margin-top:20px;}
+.my_new_list{ margin-top:10px; float:left; width:100%;}
+.my_new_list h1{ height:50px; line-height:50px; overflow:hidden; float:left; width:96%; background:#f6f6f6; padding:0 2%; font-size:18px; color:#212121;}
+.my_new_list h1 a{ color:#212121;}
+.my_new_list dl{ float:left; width:94%; float:left; padding:5px 3%;}
+.my_new_list dl dt{ height:45px; line-height:45px; overflow:hidden; font-size:14px; color:#999999;}
+.my_new_list dl dt span{ margin:0 12px;}
+.my_new_list dl dd{ line-height:25px; font-size:14px; color:#666666;}
+
+

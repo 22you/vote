@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ser_task_con1{ border:1px solid #d5d5d5; padding:20px 27px 160px; width:1144px; float:left;}
+.ktyj_ti{ float:left; width:100%; font-size:24px; color:#f7543d;}
+.ktyj{ border:1px solid #d5d5d5; width:1142px; float:left;}
+.ktyj ul{ border-bottom:1px solid #d5d5d5; float:left; width:100%;}
+.ktyj ul li{ float:left; text-align:center; font-size:18px; width:284px;color:#333333; height:60px; line-height:60px; border-right:1px solid #d5d5d5;}
+.sqlc{ border:1px solid #d5d5d5; float:left; padding:20px 25px; width:1092px; margin-top:19px;}
+.sqlc h3{ border-bottom:1px solid #d5d5d5; height:30px; line-height:30px; overflow:hidden; font-size:18px; color:#333333;}
+.sqlc_con{ background: url(../images/task/rwxq.jpg) no-repeat center; height:170px;}
+.yjnr_con{ min-height:150px;}
+.process{ border:1px solid #d5d5d5; padding:10px 10px 25px; width:1178px; float:left;}
+.process h3{ font-size:24px; color:#333333; height:42px; line-height:42px; overflow:hidden;}
+.process_con{ position:relative; margin-top:30px;}
+.process_con p{ height:7px; width:1038px; background:#9099a2; position:absolute; top:23px;left:63px;}
+.process_con dl{ position:relative; margin:0 25px; display:inline; z-index:333; float:left; text-align:center;}
+.process_con dl  dt{ border:4px solid #9099a2; background:#fff; height:46px; width:46px; border-radius:100%; text-align:center; display:inline-block;}
+.process_con dl  dt span{ width:23px; height:23px; line-height:23px; text-align:center; font-size:18px; color:#fff; background:#9099a2; display:inline-block; border-radius:100%; margin-top:10px;}
+.process_con dl dd{ width:114px; border:2px solid #9099a2; font-size:18px; color:#9099a2; border-radius:5px; text-align:center; margin-top:25px; height:35px; line-height:35px; background:#dae6f2;}
+.process_con dl:hover dd{ color:#0268cc;}
+.process_con dl:hover dt{ border:4px solid #0268cc;}
+.process_con dl:hover dt span{ background:#0268cc;}
+.form-group{ width:100%; float:left;}
+.border{ border:1px solid #d5d5d5;}
+.form-group{ line-height:30px; margin-bottom:20px;}
+.form-group input,form-group select{ line-height:30px; padding:0 5px; border-radius:4px; height:30px; }
+.form-group label{ float:left; width:192px; text-align:right; font-size:16px; color:#333333; margin-right:10px;}
+.input_txt{ padding:0 10px; width:310px;}
+.form-group textarea{ height:135px; padding:20px; width:280px;}
+.issue{ border:1px solid #d5d5d5; padding:10px 10px 25px; width:1178px; float:left; margin-top:30px;}
+.issue h3{font-size:24px; color:#333333; height:42px; line-height:42px; overflow:hidden; }
+.issue_form{ margin:0 auto; width:737px;}
+.select_input{ width:320px; height:30px; line-height:30px;}
+.form-group input.checkbox{ margin:0 5px; height:12px;}
+.form-group input.submit{ background:#2973be; font-size:18px; color:#ffffff; height:50px; line-height:50px; margin-left:207px;}
+
+
+/*账户中心*/
+.new_left{ float:left; width:250px; border:1px solid #d8d8d8;}
+.myhome{ padding:40px 0; float:left; width:100%;}
+.h_ico1{ width:200px; padding:0 25px; height:50px; line-height:50px; overflow:hidden; background:#fff; font-size:18px; color:#444359; border-bottom:1px solid #dcdcdc; position:relative;}
+.task_itemle{ float:left; background:#444359; width:250px;}
+.task_itemle a{ padding:0 25px;width:200px; float:left; font-size:14px; color:#ffffff; height:35px; line-height:35px;}
+.task_itemle a.active{ background:#2973be;}
+.ico_close{ color:#444359;}
+.ico_open{ color:#2973be;}
+.ico_close:after{
+    content:"∧";
+    display:block;
+    position:absolute;
+    width:21px;
+    height:21px;
+    top: 0;
+    right: 10px;
+}
+
+.ico_open:after{
+    content:"∨";
+    display:block;
+    position:absolute;
+    width:21px;
+    height:21px;
+	 top: 0;
+    right: 10px;
+}
+.new_right{ border:1px solid #f1f1f1; padding:17px 28px; float:right; width:873px;}
+.ti_rik{ border-left:3px solid #70a2d4; font-size:24px; color:#333333; padding-left:5px;}
+.kt_zt{ width:100%;margin:25px auto 0;}
+.kt_zt li{ width:112px; height:30px; line-height:30px; overflow:hidden; background:url(../images/task/a2.png) no-repeat center; color:#bababa; float:left; text-align:center;}
+.kt_zt li.active{ background:url(../images/task/a1.png) no-repeat center;}
+.kt_zt li.active a{ color:#fff;}
+.kt_zt li a{color:#bababa;}
+.dsh{ float:left; width:100%; border:1px solid #f1f1f1; margin-top:5px; padding:20px 0 0;}
+.itemri_con2{ width:100%;border:1px solid #f1f1f1; padding:15px 0 0; float:left; border-top:0; min-height:300px;}
+.itemri_con2 ul{ height:25px; line-height:25px; overflow: hidden; margin:10px 0;}
+.itemri_con2 ul li{ float:left; text-align:center;}
+.itemri_con2 ul li.ite_one{ width:155px;}
+.itemri_con2 ul li.ite_two{width:135px;}
+.itemri_con2 ul li.ite_three{width:110px;}
+.itemri_con2 ul li.ite_four{width:180px;}
+.itemri_con2 ul li.ite_five{width:137px;}
+.ite_six{ width:}
+.ite_six a{ width:52px; height:27px; line-height:27px; overflow:hidden; text-align:center; font-size:14px; color:#ffffff; display:inline-block;}
+.itemri_con2 ul.ite_con{ font-size:14px; color:#666666;}
+.ite_six a.see{ background:#2d7dcd;}
+.ite_six a.close{ background:#5b5f62;}
+
+/*融资说明*/
+.fina_note{ width:100%; float:left;}
+.fina_note dt{ height:30px; line-height:30px; overflow:hidden; font-size:16px; color:#333333;}
+.fina_note dd{  line-height:25px;font-size:14px; color:#666666;}
+
+/*调查统计-参与的投票*/
+.taken_vote{ float:left; margin-top:20px; border:1px solid #f1f1f1; width:100%; border-bottom:0;}
+.taken_vote ul,.launch_vote ul{ width:100%; float:left; border-bottom:1px solid #f1f1f1; height:40px; line-height:40px;}
+.taken_vote ul li,.launch_vote ul li{ float:left; text-align:center; border-right:1px solid #f1f1f1;}
+.taken_vote ul li.vote_one,.launch_vote ul li.vote_one{ width:146px;}
+.taken_vote ul li.vote_two,.launch_vote ul li.vote_two{ width:130px;}
+.taken_vote ul li.vote_three,.launch_vote ul li.vote_three{ width:130px;}
+.taken_vote ul li.vote_four,.launch_vote ul li.vote_four{width:130px;}
+.taken_vote ul li.vote_five,.launch_vote ul li.vote_five{ width:109px;}
+.taken_vote ul li.vote_six,.launch_vote ul li.vote_six{width:109px;}
+.taken_vote ul li.vote_seven,.launch_vote ul li.vote_seven{ width:104px; border-right:0;}
+.taken_vote ul li.vote_seven a,.launch_vote ul li.vote_seven a{ width:55px; height:27px; line-height:27px; overflow:hidden; background:#2d7dcd; text-align:center; font-size:14px; color:#ffffff; display:inline-block; margin-top:6px;*
+margin-top:0;}
+.taken_vote ul.firstrow,.launch_vote ul.firstrow{ font-size:16px; color:#333333;}
+.taken_vote ul.nextrow,.launch_vote ul.nextrow{ font-size:14px; color:#666666;}
+
+/*发起的投票*/
+.launch_vote{ float:left; border:1px solid #f1f1f1; width:100%; border-bottom:0; margin-top:10px;}
+
+.launch_vote_tab{ float:left; width:100%;}
+
+/*新建评分项目*/
+.add_mark_task{ float:left; width:100%; border:1px solid #f1f1f1; margin-top:5px;}
+.add_mark_task form{ padding:55px 0; float:left; width:100%;}
+.add_form_group{ width:100%; float:left; margin-bottom:20px;}
+.add_form_group label{ height:30px; line-height:30px; width:335px; float:left; text-align:right; font-size:16px; color:#333333;}
+.add_form_group .add_form_control{ float:left;}
+.add_form_group .add_form_control input{ height:28px; line-height:28px; overflow:hidden; border:1px solid #f1f1f1; border-radius:4px; margin-left:5px; width:270px; padding:0 5px;}
+.add_form_group .add_form_control input[type=button]{ background:#2973be; height:50px; line-height:50px; overflow:hidden; font-size:18px; color:#fff; margin-left:335px; width:280px;}
+.add_form_group .add_form_control textarea{border:1px solid #f1f1f1; border-radius:4px; margin-left:5px; width:270px; padding:5px; height:120px; resize:none;}
+
+
+/*发起投票*/
+.vote_box{ border: 1px solid #dcdcdc; float: left; margin-top: 30px; padding: 35px 0;}
+.vote-group{ width:100%; float: left; margin-bottom:15px;}
+.vote-group label{ width:330px; text-align: right; float: left; font-size: 16px; color: #333333; padding-right:15px; height: 30px; line-height: 30px; overflow: hidden;}
+.vote-control{ float: left;line-height: 30px;}
+.vote-control input[type=text]{ height: 30px; line-height: 30px; font-size: 16px; border: 1px solid #dcdcdc; border-radius:5px; padding:0 10px;}
+.vote-control input[type=radio]{ margin-right:5px;margin-left:5px; position: relative;top: 2px;}
+.vote-control .delete{ font-size:14px; color: #2973be; margin-left:5px; cursor:pointer;}
+.vote-control input[type=submit]{ width: 220px; height: 40px; line-height: 40px; background:#2973be; border-radius:5px; font-size: 18px; color: #ffffff;}
+.add_item a{ font-size: 14px; color: #2973be;}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+.ser_projectwork{ padding:28px 0 360px; float:left; width:100%;}
+.apply{ width:100%; float:left;}
+.apply_left{ float:left; width:240px; height:306px;}
+.apply_left h3{ height:100%; width:220px; line-height:306px; text-align:center; font-size:24px; color:#ffffff;}
+.apply .project1{ background:url(../images/project1.png) no-repeat right center;}
+.apply .project2{ background:url(../images/project2.png) no-repeat right center;}
+.apply_right{ float:left; border:1px solid #f1f1f1; width:959px; border-left:0; margin:9px 0; padding:11px 0; height:264px;}
+.process{ margin-left:45px; width:580px; float:left;}
+.process dl{ width:114px; height:84px; padding:15px 0; border-radius:100%; text-align:center; float:left;}
+.process dl dt img{ display:inline;}
+.process span{ float:left; line-height:103px; font-size:18px; color:#bcbcbc;}
+.process dl dd{ font-size:14px; color:#ffffff; margin-top:12px; width:84%; padding:0 8%;}
+.quick_apply{ font-size:24px; color:#3c72c5; margin-right:20px; margin-top:218px;}

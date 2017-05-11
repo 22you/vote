@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* CSS Document */
+.login{ background: url(../images/login/login_bg.jpg) no-repeat top center; height:592px; position:relative; }
+.login_le{ float:left; width:377px; border-right:1px dashed #fff; padding-right:53px;}
+.login_con{ background:url(../images/login/login_o.png) repeat; padding:50px 23px; height:292px; width:796px; position:absolute; left:50%; top:50%; margin-left:-398px; margin-top:-181px;}
+.form-group{ float:left; width:377px; margin-bottom:18px;}
+.form-group input,.ins_regcon input,.reg_form input{ border-radius:4px; border:1px solid #d5d5d5; height:30px; line-height:30px; padding:0 9px;  width:270px;}
+.form-group label{ width:87px; text-align:right; float:left;height:30px; line-height:30px; font-size:16px; color:#333333}
+.form-group input.vali_code,.insreg-group input.vali_code{ width:145px;}
+.insreg-group input.vali_code{ margin-left:8px;}
+.form-group span{ float:right;}
+.forget{ margin-left:89px;}
+.ljdl{   text-align:center; margin-left:89px; margin-top:33px;}
+.ljdl .login_btn{ width:287px; font-size:20px;color:#fff;height:50px; line-height:50px; border-radius:4px; background:#2973be; color:#fff; display:block;}
+.ljdl span{ font-size:14px; color:#333; line-height:25px;}
+.ljdl span a{ color:#0990c9;}
+.login_ri{ width:207px; padding-left:76px; float:left; text-align:center;}
+.login_ri img{ width:203px; height:203px; border:2px solid #f3f4f5; display:block;}
+.login_ri h3,.login_ri p{ line-height:35px;}
+
+/*研究机构注册*/
+.institute_reg{background: url(../images/login/reg01_bg.jpg) no-repeat top center; height:650px; position:relative;}
+.ins_regcon{background:url(../images/login/login_o.png) repeat; height:599px; width:952px; position:absolute; left:50%; top:50%; margin-left:-463px; margin-top:-297px;}
+.ins_regcon form{ width:617px; margin:0 auto; padding-top:24px;}
+.insreg-group{ float:left; line-height:30px; width:100%;margin-bottom:17px;}
+.insreg-group .send{ float:right; background:#2973be; font-size:14px; color:#ffffff;  height:30px; line-height:30px; display:inline-block; width:106px; border-radius:4px; text-align:center;}
+.ins_regcon form label{ width:130px; float:left; text-align:right; font-size:16px; color:#333333; height:30px; line-height:30px; margin-right:12px;}
+.ins_regcon input.check{ height:30px; width:13px; padding:0;}
+.ins_regcon input.reg{ background:#2973be; font-size:18px; color:#ffffff; margin:0; height:50px; line-height:50px; width:290px;}
+.form_bo{ float:left; width:275px; padding-left:155px; text-align:right;}
+.insreg-group select{ width:290px; padding-left:9px; height:30px; line-height:30px; vertical-align:central;}
+.insreg-group select option { line-height:30px;}
+/*注册*/
+.pe_reg{ background:url(../images/login/reg.jpg) no-repeat top center; height:746px; position:relative;}
+.pe_regcon{ background:url(../images/login/login_o.png) repeat; width:780px; height:515px; position:absolute; left:50%; top:50%; margin-left:-377px; margin-top:-273px;}
+.regcon_po{ margin-top:135px; margin-left:25px;}
+.reg_form{ width:393px; float:right; margin-right:40px; display:inline; margin-top:40px; text-align:right;}
+.xieyi{ float:left; padding-left:107px; margin-top:23px; line-height:34px; }
+.xieyi span{ width:205px;}
+.reg_form input.check{height:35px; width:13px; padding:0;}
+.insreg-group input.submit{ width:290px; height:50px; line-height:50px; background:#2973be; color:#fff; font-size:20px;}
