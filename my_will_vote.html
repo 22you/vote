@@ -8,75 +8,7 @@
     <link href="css/ex_introduce.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="./laydate/laydate.js"></script>
-    <!-- <script>
-        function Append() {
-            var Root = $("#xuanx_box");
-            var Length = Root.find(".vote-group").length;
-            var number = Length + 1;
-            var uper_number = "";
-            switch (number) {
-              case 1:
-                  uper_number = "一";
-                  break;
-              case 2:
-                  uper_number = "二";
-                  break;
-                case 3:
-                    uper_number = "三";
-                    break;
-                case 4:
-                    uper_number = "四";
-                    break;
-                case 5:
-                    uper_number = "五";
-                    break;
-                case 6:
-                    uper_number = "六";
-                    break;
-            }
-
-            if (Length >= 6) {
-                return alert("不能超过6个")
-            };
-
-            Root.append('<div class="vote-group"><label>选项' + uper_number + '</label><div class="vote-control"><input type="text" placeholder="很喜欢"/><span class="delete">删除</span></div></div>')
-            $('.vote-control>.delete').click(function() {
-                $(this).parent().parent().remove();
-                // alert($(this).index());
-                for (i = $(this).index() - 1; i < number; i++) {
-
-                    newnum = i + 1;
-                    switch (newnum) {
-                        case 1:
-                            uper_number = "一";
-                            break;
-                        case 2:
-                            uper_number = "二";
-                            break;
-                        case 3:
-                            uper_number = "三";
-                            break;
-                        case 4:
-                            uper_number = "四";
-                            break;
-                        case 5:
-                            uper_number = "五";
-                            break;
-                        case 6:
-                            uper_number = "六";
-                            break;
-                    }
-                    $('#xuanx_box').find(".vote-group").eq(i).find("label").html("选项" + uper_number);
-                }
-            })
-
-        }
-
-        // function Delete(ctx) {
-        //     <!---  alert($(ctx).html());-->
-        //     $(ctx).parent().parent('.vote-group').remove();
-        // }
-    </script> -->
+  
     <script>
     function append() {
         var root = $("#xuanx_box");
